@@ -1,6 +1,6 @@
 # NEWS APP
 
-##### Demo
+#### Demo
 <img src="./screenshots/screenshot.jpg" width="100%">
 
 #### Developer info
