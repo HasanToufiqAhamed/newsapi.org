@@ -1,17 +1,44 @@
-# untitled
+# NEWS APP
 
-A new Flutter project.
+#### Developer info
+```
+Hasan Toufiq Ahamed
+hasantoufiqos@gmail.com
+```
 
-## Getting Started
+##### Download APK
+<pre><a href="https://drive.google.com/drive/folders/1CA7T4YCRGWqlNTM3CBRoR3_u92c2Di_U">https://drive.google.com/drive/folders/1CA7T4YCRGWqlNTM3CBRoR3_u92c2Di_U</a></pre>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+#### Libraries
+```
+get_storage: for local database.
+cached_network_image: for network images.
+google_sign_in: for google sign in.
+firebase_auth: for authentication.
+cloud_firestore: for online datatase.
+internet_connection_checker: for check device internet status.
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# newsapi.org
+## API Reference
+
+#### Base url
+
+```http
+  https://newsapi.org/
+```
+#### Get all Top headlines
+```http
+  GET v2/top-headlines
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `apiKey` | `string` | **Required**. Your API key  |
+| `country` | `string` | **ae**, **ar**, **at**, **au**, . . .  |
+| `category` | `string` | **business**, **entertainment**, **general**, . . .  |
+| `q` | `string` | Keywords or a phrase to search for  |
+| `pageSize` | `int` | The number of results to return per page (request). 20 is the default, 100 is the maximum.  |
+| `page` | `int` | Use this to page through the results if the total results found is greater than the page size.|
+## API Reference
